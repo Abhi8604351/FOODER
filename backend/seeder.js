@@ -52,12 +52,12 @@ const importData = async () => {
             { name: 'Nimbu Pani', description: 'Refreshing Indian lemonade with a hint of salt and spice.', category: 'Beverages', image: 'https://images.unsplash.com/photo-1546173159-315724a31696' },
         ];
 
-        const foods = foodItems.map(food => ({
+        const foods = indianFoods.map(food => ({
             ...food,
             price: Math.floor(Math.random() * (600 - 80 + 1) + 80), // Random price between 80-600
             isAvailable: true,
             countInStock: Math.floor(Math.random() * 20), // Random stock 0-19
-            isVeg: !food.name.toLowerCase().includes('chicken') && !food.name.toLowerCase().includes('chicken') && !food.name.toLowerCase().includes('vada pav') && !food.name.toLowerCase().includes('tandoori') && !food.name.toLowerCase().includes('rogan')
+            isVeg: !food.name.toLowerCase().includes('chicken') && !food.name.toLowerCase().includes('lamb') && !food.name.toLowerCase().includes('fish') && !food.name.toLowerCase().includes('tandoori') && !food.name.toLowerCase().includes('rogan')
         }));
 
         await Food.insertMany(foods);
