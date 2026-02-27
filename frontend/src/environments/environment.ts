@@ -1,5 +1,5 @@
 export const environment = {
     production: true,
-    apiUrl: 'REPLACE_WITH_YOUR_RENDER_URL/api',
-    baseUrl: 'REPLACE_WITH_YOUR_RENDER_URL'
+    apiUrl: 'https://fooder-x9fy.onrender.com/api',
+    baseUrl: 'https://fooder-x9fy.onrender.com'
 };
