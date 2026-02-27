@@ -1,5 +1,5 @@
 export const environment = {
     production: true,
-    apiUrl: 'https://foodflex-pro.onrender.com/api',
-    baseUrl: 'https://foodflex-pro.onrender.com'
+    apiUrl: 'REPLACE_WITH_YOUR_RENDER_URL/api',
+    baseUrl: 'REPLACE_WITH_YOUR_RENDER_URL'
 };
