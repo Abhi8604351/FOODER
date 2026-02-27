@@ -13,7 +13,11 @@ const { errorHandler, notFound } = require('./middlewares/errorMiddleware');
 const logger = require('./utils/logger');
 
 // Connect to Database
-connectDB();
+connectDB().then(() => {
+    // Auto-seed data on startup if empty
+    const { importData } = require('./seeder');
+    importData();
+});
 
 const app = express();
 

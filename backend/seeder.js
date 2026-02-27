@@ -1,23 +1,26 @@
-require('dotenv').config();
-const mongoose = require('mongoose');
 const User = require('./models/userModel');
 const Food = require('./models/foodModel');
-const connectDB = require('./config/db');
-
-connectDB();
 
 const importData = async () => {
     try {
-        await User.deleteMany();
-        await Food.deleteMany();
+        const foodCount = await Food.countDocuments();
+        if (foodCount > 0) {
+            console.log('Database already has data. Skipping auto-seed.');
+            return;
+        }
+
+        console.log('Database empty. Starting auto-seed...');
 
         // Create Admin
-        await User.create({
-            name: 'Admin User',
-            email: 'admin@example.com',
-            password: 'admin123',
-            role: 'admin',
-        });
+        const adminExists = await User.findOne({ email: 'admin@example.com' });
+        if (!adminExists) {
+            await User.create({
+                name: 'Admin User',
+                email: 'admin@example.com',
+                password: 'admin123',
+                role: 'admin',
+            });
+        }
 
         const indianFoods = [
             { name: 'Butter Chicken', description: 'Creamy and buttery tomato-based chicken curry.', category: 'Main Course', image: 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398' },
@@ -54,36 +57,17 @@ const importData = async () => {
 
         const foods = indianFoods.map(food => ({
             ...food,
-            price: Math.floor(Math.random() * (600 - 80 + 1) + 80), // Random price between 80-600
+            price: Math.floor(Math.random() * (600 - 80 + 1) + 80),
             isAvailable: true,
-            countInStock: Math.floor(Math.random() * 20), // Random stock 0-19
+            countInStock: Math.floor(Math.random() * 20),
             isVeg: !food.name.toLowerCase().includes('chicken') && !food.name.toLowerCase().includes('lamb') && !food.name.toLowerCase().includes('fish') && !food.name.toLowerCase().includes('tandoori') && !food.name.toLowerCase().includes('rogan')
         }));
 
         await Food.insertMany(foods);
-
-        console.log('Indian Food Data Imported!');
-        process.exit();
+        console.log('Indian Food Data Auto-Imported Successfully!');
     } catch (error) {
-        console.error(`${error}`);
-        process.exit(1);
+        console.error(`Auto-seed Error: ${error.message}`);
     }
 };
 
-const destroyData = async () => {
-    try {
-        await User.deleteMany();
-        await Food.deleteMany();
-        console.log('Data Destroyed!');
-        process.exit();
-    } catch (error) {
-        console.error(`${error}`);
-        process.exit(1);
-    }
-};
-
-if (process.argv[2] === '-d') {
-    destroyData();
-} else {
-    importData();
-}
+module.exports = { importData };
