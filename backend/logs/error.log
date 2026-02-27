@@ -1,0 +1,50 @@
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/foods?page=1&limit=8&category=All - GET - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:29:17"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/foods/categories - GET - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:29:17"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/foods?page=1&limit=8&category=All - GET - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:29:29"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/foods?page=1&limit=8&category=All - GET - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:30:04"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/foods?page=1&limit=8&category=All - GET - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:30:21"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/foods/categories - GET - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:30:21"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/users - OPTIONS - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:31:18"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/users - OPTIONS - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:31:40"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/users - OPTIONS - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:31:46"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/users - OPTIONS - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:31:51"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/users - OPTIONS - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:31:58"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/users - OPTIONS - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:31:58"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/users - OPTIONS - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:32:03"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/users - OPTIONS - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:32:09"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/users - OPTIONS - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:32:15"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/foods?page=1&limit=8&category=All - GET - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:33:25"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/foods/categories - GET - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:33:25"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/foods?page=1&limit=8&category=All - GET - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:33:39"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/foods/categories - GET - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:33:39"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/foods?page=1&limit=8&category=All - GET - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:33:51"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/foods/categories - GET - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:33:51"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/users/login - OPTIONS - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:34:39"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/users/login - OPTIONS - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:34:39"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/users/login - OPTIONS - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:35:10"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/foods?page=1&limit=8&category=All - GET - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:35:17"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /api/foods/categories - GET - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:35:17"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - / - GET - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:35:23"}
+{"level":"error","message":"500 - Cannot set property query of #<IncomingMessage> which has only a getter - /favicon.ico - GET - ::1","service":"foodflex-backend","timestamp":"2026-02-27 22:35:23"}
+{"level":"error","message":"401 - Invalid email or password - /api/users/login - POST - ::1","service":"foodflex-backend","timestamp":"2026-02-27 23:03:26"}
+{"level":"error","message":"401 - Invalid email or password - /api/users/login - POST - ::1","service":"foodflex-backend","timestamp":"2026-02-27 23:03:28"}
+{"level":"error","message":"500 - Cannot read properties of null (reading '_id') - /api/orders/myorders - GET - ::1","service":"foodflex-backend","timestamp":"2026-02-27 23:11:33"}
+{"level":"error","message":"500 - Cannot read properties of null (reading '_id') - /api/orders/myorders - GET - ::ffff:127.0.0.1","service":"foodflex-backend","timestamp":"2026-02-27 23:12:53"}
+{"level":"error","message":"500 - Cannot read properties of null (reading '_id') - /api/orders/myorders - GET - ::1","service":"foodflex-backend","timestamp":"2026-02-27 23:14:13"}
+{"level":"error","message":"500 - Cannot read properties of null (reading '_id') - /api/orders/myorders - GET - ::1","service":"foodflex-backend","timestamp":"2026-02-27 23:14:17"}
+{"level":"error","message":"500 - Cannot read properties of null (reading '_id') - /api/orders/myorders - GET - ::1","service":"foodflex-backend","timestamp":"2026-02-27 23:14:22"}
+{"level":"error","message":"500 - Cannot read properties of null (reading '_id') - /api/orders - POST - ::1","service":"foodflex-backend","timestamp":"2026-02-27 23:15:14"}
+{"level":"error","message":"500 - Cannot read properties of null (reading '_id') - /api/orders - POST - ::1","service":"foodflex-backend","timestamp":"2026-02-27 23:16:20"}
+{"level":"error","message":"500 - User not found, please re-login - /api/orders - POST - ::1","service":"foodflex-backend","timestamp":"2026-02-27 23:18:18"}
+{"level":"error","message":"401 - Invalid email or password - /api/users/login - POST - ::1","service":"foodflex-backend","timestamp":"2026-02-27 23:18:45"}
+{"level":"error","message":"401 - Invalid email or password - /api/users/login - POST - ::1","service":"foodflex-backend","timestamp":"2026-02-27 23:56:46"}
+{"level":"error","message":"500 - next is not a function - /api/users/profile - PUT - ::1","service":"foodflex-backend","timestamp":"2026-02-28 00:00:34"}
+{"level":"error","message":"500 - next is not a function - /api/users/profile - PUT - ::1","service":"foodflex-backend","timestamp":"2026-02-28 00:01:21"}
+{"level":"error","message":"500 - Not Found - /api/orders/69a1d9a0a71b1b95705626ef/status - /api/orders/69a1d9a0a71b1b95705626ef/status - PUT - ::1","service":"foodflex-backend","timestamp":"2026-02-28 00:33:19"}
+{"level":"error","message":"500 - Not Found - /api/orders/69a1d9a0a71b1b95705626ef/status - /api/orders/69a1d9a0a71b1b95705626ef/status - PUT - ::1","service":"foodflex-backend","timestamp":"2026-02-28 00:33:25"}
+{"level":"error","message":"500 - Not Found - /api/orders/69a1d9a0a71b1b95705626ef/status - /api/orders/69a1d9a0a71b1b95705626ef/status - PUT - ::1","service":"foodflex-backend","timestamp":"2026-02-28 00:34:47"}
+{"level":"error","message":"500 - Not Found - /api/orders/69a1cfe824b6a0c229367f59/status - /api/orders/69a1cfe824b6a0c229367f59/status - PUT - ::1","service":"foodflex-backend","timestamp":"2026-02-28 00:34:49"}
+{"level":"error","message":"500 - Not Found - /api/orders/69a1c13181153eceff3e4092/status - /api/orders/69a1c13181153eceff3e4092/status - PUT - ::1","service":"foodflex-backend","timestamp":"2026-02-28 00:34:51"}
+{"level":"error","message":"500 - Not Found - /api/orders/69a1cfe824b6a0c229367f59/status - /api/orders/69a1cfe824b6a0c229367f59/status - PUT - ::1","service":"foodflex-backend","timestamp":"2026-02-28 00:37:10"}
+{"level":"error","message":"500 - Not Found - /api/orders/69a1d9a0a71b1b95705626ef/status - /api/orders/69a1d9a0a71b1b95705626ef/status - PUT - ::1","service":"foodflex-backend","timestamp":"2026-02-28 00:40:35"}
+{"level":"error","message":"500 - Not Found - /api/orders/69a1cfe824b6a0c229367f59/status - /api/orders/69a1cfe824b6a0c229367f59/status - PUT - ::1","service":"foodflex-backend","timestamp":"2026-02-28 00:40:47"}
