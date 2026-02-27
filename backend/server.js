@@ -21,6 +21,9 @@ connectDB().then(() => {
 
 const app = express();
 
+// Trust Render's proxy for rate limiting/security
+app.set('trust proxy', 1);
+
 // Security Middlewares
 app.use(helmet({
     crossOriginResourcePolicy: false,
