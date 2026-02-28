@@ -68,14 +68,19 @@ import { environment } from '../../../../environments/environment';
             <h3>{{ editingFoodId ? 'Update Food Item' : 'Add New Item' }}</h3>
           </div>
           <form (ngSubmit)="saveFood()">
+            <!-- Name Field -->
             <div class="form-group">
               <label>Plate Name</label>
-              <input type="text" name="name" [(ngModel)]="currentFood.name" required placeholder="e.g. Italian Pasta">
+              <input type="text" name="name" [(ngModel)]="currentFood.name" required placeholder="e.g. Butter Chicken Special">
             </div>
+
+            <!-- Description -->
             <div class="form-group">
               <label>Description</label>
-              <textarea name="desc" [(ngModel)]="currentFood.description" required rows="2"></textarea>
+              <textarea name="description" [(ngModel)]="currentFood.description" required rows="2" placeholder="Describe the taste, ingredients..."></textarea>
             </div>
+
+            <!-- Price and Category -->
             <div class="form-row">
               <div class="form-group">
                 <label>Price (₹)</label>
@@ -83,13 +88,15 @@ import { environment } from '../../../../environments/environment';
               </div>
               <div class="form-group">
                 <label>Category</label>
-                <input type="text" name="cat" [(ngModel)]="currentFood.category" required>
+                <input type="text" name="category" [(ngModel)]="currentFood.category" required>
               </div>
             </div>
+
+            <!-- Stock and Veg/Non-Veg -->
             <div class="form-row">
               <div class="form-group">
                 <label>Items in Stock</label>
-                <input type="number" name="stock" [(ngModel)]="currentFood.countInStock" required>
+                <input type="number" name="countInStock" [(ngModel)]="currentFood.countInStock" required>
               </div>
               <div class="form-group diet-toggle">
                 <label>Dietary Type</label>
@@ -99,10 +106,12 @@ import { environment } from '../../../../environments/environment';
                 </div>
               </div>
             </div>
+
+            <!-- Image Upload -->
             <div class="form-group">
               <label>Image URL or Upload from PC</label>
               <div class="upload-row">
-                <input type="text" name="img" [(ngModel)]="currentFood.image" required placeholder="Paste URL or upload -->">
+                <input type="text" name="image" [(ngModel)]="currentFood.image" required placeholder="Paste URL or upload -->">
                 <label class="file-label">
                   📁
                   <input type="file" (change)="onFileSelected($event)" accept="image/*">
@@ -112,7 +121,7 @@ import { environment } from '../../../../environments/environment';
             
             <div class="modal-actions">
               <button type="button" class="cancel-btn" (click)="closeModal()">Cancel</button>
-              <button type="submit" class="save-btn" [disabled]="isUploading">{{ editingFoodId ? 'Update Item' : 'Create Item' }}</button>
+              <button type="submit" class="save-btn" [disabled]="isUploading || !currentFood.name">{{ editingFoodId ? 'Update Item' : 'Create Item' }}</button>
             </div>
           </form>
         </div>
