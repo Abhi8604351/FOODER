@@ -149,31 +149,33 @@ import { environment } from '../../../../environments/environment';
     
     .modal-overlay {
       position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(0,0,0,0.4); backdrop-filter: blur(5px);
-      display: flex; justify-content: center; align-items: flex-start; 
-      padding-top: 5vh; overflow-y: auto; z-index: 2000;
+      background: rgba(0,0,0,0.5); backdrop-filter: blur(4px);
+      display: flex; justify-content: center; align-items: center; 
+      padding: 20px; z-index: 10000;
     }
     .modal { 
-      background: white; padding: 2.2rem; border-radius: 25px; width: 550px; 
-      box-shadow: 0 20px 50px rgba(0,0,0,0.2); margin-bottom: 5vh;
-      max-height: 90vh; overflow-y: auto;
+      background: white; padding: 2rem; border-radius: 25px; 
+      width: 100%; max-width: 550px; 
+      max-height: 85vh; overflow-y: auto;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+      position: relative;
     }
-    .modal-header { margin-bottom: 1.5rem; border-bottom: 1px solid #f1f2f6; padding-bottom: 0.8rem; }
+    .modal-header { margin-bottom: 1.5rem; border-bottom: 1px solid #f1f2f6; padding-bottom: 0.8rem; position: sticky; top: -2rem; background: white; z-index: 10; }
     .form-group { margin-bottom: 1.2rem; }
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
     label { display: block; margin-bottom: 0.4rem; font-size: 0.85rem; font-weight: 600; color: #2d3436; }
-    input, textarea { width: 100%; padding: 0.7rem; border: 1px solid #dfe6e9; border-radius: 10px; font-size: 1rem; outline: none; transition: 0.3s; }
+    input, textarea { width: 100%; padding: 0.7rem; border: 1px solid #dfe6e9; border-radius: 10px; font-size: 1rem; outline: none; transition: 0.3s; box-sizing: border-box; }
     input:focus, textarea:focus { border-color: #ff4757; }
     
     .toggle-btns { display: flex; background: #f1f2f6; padding: 0.3rem; border-radius: 10px; }
     .toggle-btns button { flex: 1; border: none; padding: 0.5rem; border-radius: 8px; font-weight: 700; cursor: pointer; transition: 0.3s; background: transparent; }
     .toggle-btns button.active { background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-
+ 
     .upload-row { display: flex; gap: 0.5rem; align-items: center; }
     .file-label { 
       background: #f1f2f6; padding: 0.7rem; border-radius: 10px; cursor: pointer; 
       font-size: 1.2rem; display: flex; align-items: center; justify-content: center;
-      transition: 0.3s; width: 45px; height: 45px;
+      transition: 0.3s; width: 45px; height: 45px; flex-shrink: 0;
     }
     .file-label:hover { background: #dfe6e9; }
     .file-label input { display: none; }
