@@ -150,9 +150,14 @@ import { environment } from '../../../../environments/environment';
     .modal-overlay {
       position: fixed; top: 0; left: 0; width: 100%; height: 100%;
       background: rgba(0,0,0,0.4); backdrop-filter: blur(5px);
-      display: flex; justify-content: center; align-items: center; z-index: 2000;
+      display: flex; justify-content: center; align-items: flex-start; 
+      padding-top: 5vh; overflow-y: auto; z-index: 2000;
     }
-    .modal { background: white; padding: 2.2rem; border-radius: 25px; width: 550px; box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
+    .modal { 
+      background: white; padding: 2.2rem; border-radius: 25px; width: 550px; 
+      box-shadow: 0 20px 50px rgba(0,0,0,0.2); margin-bottom: 5vh;
+      max-height: 90vh; overflow-y: auto;
+    }
     .modal-header { margin-bottom: 1.5rem; border-bottom: 1px solid #f1f2f6; padding-bottom: 0.8rem; }
     .form-group { margin-bottom: 1.2rem; }
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
