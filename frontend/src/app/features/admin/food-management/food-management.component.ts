@@ -149,18 +149,18 @@ import { environment } from '../../../../environments/environment';
     
     .modal-overlay {
       position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(0,0,0,0.5); backdrop-filter: blur(4px);
-      display: flex; justify-content: center; align-items: center; 
-      padding: 20px; z-index: 10000;
+      background: rgba(0,0,0,0.6); backdrop-filter: blur(5px);
+      display: flex; justify-content: center; align-items: flex-start; 
+      padding: 20px; overflow-y: auto; z-index: 10000;
     }
     .modal { 
       background: white; padding: 2rem; border-radius: 25px; 
       width: 100%; max-width: 550px; 
-      max-height: 85vh; overflow-y: auto;
-      box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+      margin-top: 50px; margin-bottom: 50px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.4);
       position: relative;
     }
-    .modal-header { margin-bottom: 1.5rem; border-bottom: 1px solid #f1f2f6; padding-bottom: 0.8rem; position: sticky; top: -2rem; background: white; z-index: 10; }
+    .modal-header { margin-bottom: 1.5rem; border-bottom: 2px solid #f1f2f6; padding-bottom: 1rem; }
     .form-group { margin-bottom: 1.2rem; }
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
     label { display: block; margin-bottom: 0.4rem; font-size: 0.85rem; font-weight: 600; color: #2d3436; }
