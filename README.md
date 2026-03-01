@@ -62,4 +62,4 @@ docker-compose up --build
 - `docker-compose.yml`: Full stack orchestration.
 
 ---
-Developed with ❤️ by FoodFlex Team
+Developed ❤️ by ABHISHEK SINGH
